@@ -20,3 +20,19 @@
     * 내결함성, 확장성, 무중단 배포를 위해 노드 클러스터로 호스팅될 수 있음
     * ![pico](./images/overview_piko.png)
     * [Docker-compose.yaml](./example/docker-compose-pico.yaml)
+
+## Infrastructure as Code:
+
+  * OpenTofu - Terraform의 오픈소스 대체제 ( https://github.com/opentofu/opentofu )
+    * 2023년에 Hashicorp는 Terraform과 다른 제품들에 대해 이전에 사용하던 MPL 2.0 대신 더 제한적인 BSL 1.1 라이선스를 채택하기로 결정함
+    * 이로 인해 Linux Foundation에서 신속하게 OpenTofu라는 포크가 만들어짐
+    * 2024년 3월에 출시된 OpenTofu 1.7 버전은 엔터프라이즈 수준에서 사용 가능한 첫 번째 버전으로 널리 여겨짐
+    * Oracle E-Business Suite (EBS) Cloud Manager의 최신 업데이트인 24.1.1.1 버전에서 Terraform 대신 오픈소스 포크인 OpenTofu를 사용하게 됨 ( https://www.thestack.technology/oracle-dumps-terraform-for-opentofu/ )
+    * OpenTofu는 기본적으로 Terraform의 친숙한 대체제임
+    * 복잡한 EBS 환경을 클라우드로 이전하려는 사람들에게는 사소한 구현 세부 사항이지만, 포크 버전이 이미 주요 기업에서 사용할 만큼 견고하다는 신호를 보내고 있음
+
+
+
+
+
+
