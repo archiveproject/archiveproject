@@ -18,3 +18,4 @@
     * 프로덕션 수준의 트래픽을 처리하며, 호스팅(특히 Kubernetes에서)이 간단하도록 설계됨
     * 고객 네트워크, BYOC(Bring Your Own Cloud) 서비스의 서비스를 노출하거나 IoT 디바이스에 연결할 수 있음
     * 내결함성, 확장성, 무중단 배포를 위해 노드 클러스터로 호스팅될 수 있음
+    * ![pico](./images/overview_piko.png)
