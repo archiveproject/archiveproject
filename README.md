@@ -31,7 +31,26 @@
     * OpenTofu는 기본적으로 Terraform의 친숙한 대체제임
     * 복잡한 EBS 환경을 클라우드로 이전하려는 사람들에게는 사소한 구현 세부 사항이지만, 포크 버전이 이미 주요 기업에서 사용할 만큼 견고하다는 신호를 보내고 있음
 
+## BI
 
+
+  * Quary - 엔지니어를 위한 오픈소스 BI (https://github.com/quarylabs/quary)
+    * "Engineer-oriented BI and analytics"
+      * 엔지니어들에게 기존 셀프-서브 BI 도구들은 로컬 개발도구를 포기하게 만듦(Copilot, Git등)
+      * Quary는 표준 소프트웨어 관행(버전 관리, 테스트, 리팩토링, CI/CD, 오픈 소스 등)을 BI 및 분석 워크플로우에 도입하여 이러한 문제점을 해결
+    * 다양한 DB에 접속 지원 : Supabase, Redshift, Bigquery, PostgreSQL, Snowflake, DUckDB, SQLite
+    * 테이블을 변환, 구성 및 문서화하기 위한 SQL 쿼리 작성
+    * 차트, 대시보드 및 보고서 만들기(개발 중)
+    * 버전 관리를 통해 반복적으로 테스트, 협업 및 리팩터링하기
+    * 정리되고 문서화된 모델을 데이터베이스에 다시 배포
+    * 지원하는 애셋 타입  
+    * Source: 데이터베이스 테이블, 플랫 파일 또는 API(DuckDB 사용)와 같이 Quary에 공급되는 외부 데이터 소스를 정의
+      * Model: SQL을 사용해 소스의 원시 데이터를 분석 가능한 데이터 세트로 변환하여 엔지니어가 복잡한 쿼리를 원자적 구성 요소로 분할 가능
+      * Chart: SQL을 사용하여 데이터의 시각적 표현 생성
+      * Dashboard(WIP): 여러 차트를 단일 보기로 결합하여 엔지니어가 한 곳에서 데이터를 모니터링하고 분석
+      * Report(WIP): 자세한 보고서를 만들어 인사이트와 결과를 팀 또는 이해관계자와 공유
+    * ![img](https://github.com/quarylabs/quary/raw/main/assets/readme_demo.gif)
+        
 
 
 
