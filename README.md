@@ -54,6 +54,7 @@
 ## Data Pipelines
 
   * **Koheesio - Nike의 데이터 파이프라인 구축용 프레임워크 오픈소스** ([github.com/Nike-Inc](https://github.com/Nike-Inc/koheesio))
+    * https://engineering.nike.com/koheesio/latest/
     * 효율적인 데이터 파이프라인을 구축하기 위한 Python 프레임워크
     * 모듈화와 협업을 촉진하여 간단하고 재사용 가능한 구성 요소로 복잡한 파이프라인을 만들 수 있게 함
     * 여러 데이터 처리 라이브러리나 프레임워크와 원활하게 작동하도록 설계됨
@@ -67,7 +68,44 @@
       * Step: Koheesio의 기본 작업 단위로, 데이터 파이프라인에서 단일 작업을 나타냄. 입력을 받아 출력을 생성함
       * Context: 작업의 환경을 설정하는 구성 클래스. 작업 간 변수를 공유하고 환경에 따라 작업의 동작을 조정할 수 있음
       * Logger: 다양한 수준에서 메시지를 기록하는 클래스
-    * ![Koheesio](./images/overview_koheesio.png)
+
+```mermaid
+
+flowchart LR
+
+%% Should render like this
+%% ┌─────────┐        ┌──────────────────┐        ┌─────────┐
+%% │ Input 1 │───────▶│                  ├───────▶│Output 1 │
+%% └─────────┘        │                  │        └─────────┘
+%%                    │                  │
+%% ┌─────────┐        │                  │        ┌─────────┐
+%% │ Input 2 │───────▶│       Step       │───────▶│Output 2 │
+%% └─────────┘        │                  │        └─────────┘
+%%                    │                  │
+%% ┌─────────┐        │                  │        ┌─────────┐
+%% │ Input 3 │───────▶│                  ├───────▶│Output 3 │
+%% └─────────┘        └──────────────────┘        └─────────┘
+
+%% &nbsp; is for increasing the box size without having to mess with CSS settings
+Step["
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
+&nbsp;
+Step
+&nbsp;
+&nbsp;
+&nbsp;
+"]
+
+I1["Input 1"] ---> Step
+I2["Input 2"] ---> Step
+I3["Input 3"] ---> Step
+
+Step ---> O1["Output 1"]
+Step ---> O2["Output 2"]
+Step ---> O3["Output 3"]
+
+```
 
         
 
