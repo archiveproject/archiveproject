@@ -1,5 +1,20 @@
 # archiveproject
 
+## API
+
+  * **Fusio - 오픈소스 API 관리 플랫폼**  (https://www.fusio-project.org/, https://github.com/apioo/fusio)
+    * API 관리 : 강력한 백엔드 앱을 제공하여 API 제어 및 모니터링 가능
+    * 개발자가 API 사용을 위해 등록할 수 있는 "개발자 포털" 앱 제공
+    * API 빌더 : 코딩 없이 다양한 소스로부터 완전한 API를 구축하기 위한 여러 제너레이터 제공
+    * 수익화 지원 : 특정 경로에 대해 요금을 부과하는 간단한 결제 시스템 제공
+    * SDK 생성 : 정의된 스키마를 기반으로 API에 대한 클라이언트 SDK를 자동으로 생성 가능
+    * Rate Limit : 사용자 또는 앱을 기반으로 요청을 제한하는 방법 제공
+    * 스키마 생성 : OAI 및 TypeAPI 사양을 자동으로 생성하는 엔드포인트 제공
+    * 웹훅 : API에 대한 발행/구독 패턴을 구축하는 데 도움이 되는 웹훅 시스템 포함
+    * OAuth2 인증 : 앱 개발자는 비공개 API 엔드포인트에 액세스하기 위해 액세스 토큰을 얻을 수 있음
+    * ![Fusio](./images/arch_fusio-project_org.png)
+
+
 ## Queue Service
 
   * **PGMQ - Postgres 기반의 SQS 대체제** (https://github.com/tembo-io/pgmq)
