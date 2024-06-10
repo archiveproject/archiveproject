@@ -12,7 +12,7 @@
     * 스키마 생성 : OAI 및 TypeAPI 사양을 자동으로 생성하는 엔드포인트 제공
     * 웹훅 : API에 대한 발행/구독 패턴을 구축하는 데 도움이 되는 웹훅 시스템 포함
     * OAuth2 인증 : 앱 개발자는 비공개 API 엔드포인트에 액세스하기 위해 액세스 토큰을 얻을 수 있음
-    * docker image: https://hub.docker.com/r/fusio/fusio
+    * docker image: https://hub.docker.com/r/fusio/fusio , https://github.com/apioo/fusio-docker
     * ![Fusio](./images/arch_fusio-project_org.png)
 
 
