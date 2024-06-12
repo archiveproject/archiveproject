@@ -123,6 +123,9 @@ Step ---> O3["Output 3"]
 
 ```
 
+
+  * CloudQuery - 고성능 데이터 통합 ​​프레임워크 ( https://github.com/cloudquery/cloudquery
+    * CloudQuery는 추가 분석을 위해 클라우드 API, 파일 또는 데이터베이스에서 데이터베이스, 데이터 레이크 또는 스트리밍 플랫폼과 같은 지원되는 다양한 대상으로 구성을 추출, 변환 및 로드합니다.
         
 
 
